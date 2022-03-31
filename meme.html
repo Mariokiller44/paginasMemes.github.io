@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <img id="miImagen" onclick="changeImage()" src="https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/VBRIOSJLLJMIFCRDMJBAR26A3U.jpg" width="200" height="180">
+    <p id="miTexto">Click en Chuck Norris.</p>
+
+    <script>
+        function changeImage() {
+            var image = document.getElementById('miImagen');
+            var texto = document.getElementById('miTexto');
+            if (image.src.match('europapress')) {
+                image.src = "https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/VBRIOSJLLJMIFCRDMJBAR26A3U.jpg";
+                texto.textContent = "Click en Chuck Norris."
+            } else {
+                image.src = "https://img.europapress.es/fotoweb/fotonoticia_20150310130850-732359_420.jpg";
+                texto.textContent = "No puedes clickar en Chuck Norris, el te clickea a ti";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
